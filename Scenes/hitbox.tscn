@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfw35o8n04k6g"]
+
+[ext_resource type="Texture2D" uid="uid://dwyssijsi4ct4" path="res://Scripts/evil.png" id="1_ikme4"]
+[ext_resource type="Script" path="res://sprite_2d.gd" id="2_5qxxn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3klx"]
+size = Vector2(310.685, 436.091)
+
+[node name="Sprite2D" type="Sprite2D"]
+scale = Vector2(0.289683, 0.275172)
+texture = ExtResource("1_ikme4")
+script = ExtResource("2_5qxxn")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(0, 6.93149e-06)
+shape = SubResource("RectangleShape2D_n3klx")

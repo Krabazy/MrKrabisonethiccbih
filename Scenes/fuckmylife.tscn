@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://j4g3jv6w2mhp"]
+
+[ext_resource type="AudioStream" uid="uid://02ou3kkqlxvo" path="res://Scenes/64272_Aisatsana.mp3" id="1_n8ct8"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_n8ct8")

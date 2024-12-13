@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh30n8gad703l"]
+
+[ext_resource type="Texture2D" uid="uid://bh1vyi8nrbdjr" path="res://Scripts/Flag_of_the_United_Kingdom_(1-2).png" id="1_ry634"]
+[ext_resource type="PackedScene" uid="uid://cvtek7jcmj48n" path="res://Scenes/Character.tscn" id="2_no77n"]
+[ext_resource type="AudioStream" uid="uid://dbk3epr7no4il" path="res://Scenes/m2m-0eeb37df48fcc56d99140dfc3029fd2e36451.mp3" id="3_hsy8t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veswu"]
+size = Vector2(11782.3, 626.086)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(5655, 628)
+scale = Vector2(9.42167, 0.0766667)
+texture = ExtResource("1_ry634")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(5655.5, 631)
+scale = Vector2(0.96, 0.0766666)
+shape = SubResource("RectangleShape2D_veswu")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_no77n")]
+position = Vector2(54, 559)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_hsy8t")
+autoplay = true

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkhyimf7wb561"]
+
+[ext_resource type="Texture2D" uid="uid://bebt2aqttpa5b" path="res://Scripts/wonner.png" id="1_835gv"]
+
+[node name="Node2D" type="Sprite2D"]
+position = Vector2(572, 324)
+texture = ExtResource("1_835gv")
